@@ -13,7 +13,7 @@ function Application() {
         user ?
         <HomePage />
       :
-        <Router>
+        <Router basepath={process.env.PUBLIC_URL}>
           <SignUp path="signUp" />
           <SignIn path="/" />
           <PasswordReset path = "passwordReset" />

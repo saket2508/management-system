@@ -122,7 +122,7 @@ const sendResetEmail = event => {
           </button>}
         </form>
         <Link
-         to ="/"
+         to={process.env.PUBLIC_URL}
           className="my-2 text-blue-700 hover:text-blue-800 text-center block"
         >
           back to sign in page
